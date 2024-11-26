@@ -1,4 +1,3 @@
-﻿# quick-note-browser-extension
 # Quick Note Chrome Extension
 
 **Quick Note** is a simple Chrome extension that lets you quickly add, edit, and delete notes directly from your browser. All notes are saved locally and persist even after closing the browser.
