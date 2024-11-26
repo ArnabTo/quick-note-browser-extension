@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 300px;
+    padding: 15px;
+    font-family: "Poppins", serif;
+    background: #232323;
+    color: #d6d6d6;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#noteTitle {
+    padding: 8px;
+    border: 1px solid #656565;
+    border-radius: 8px;
+    font-size: 16px;
+    background: transparent;
+    color: white;
+    outline: none;
+}
+#noteTitle:focus{
+    background: rgb(62, 62, 62);
+}
+#noteContent {
+    padding: 8px;
+    border: 1px solid #656565;
+    border-radius: 8px;
+    min-height: 80px;
+    resize: vertical;
+    font-size: 14px;
+    background: transparent;
+    color: white;
+    outline: none;
+}
+#noteContent:focus{
+    background: rgb(62, 62, 62);
+}
+#noteContent::placeholder{
+    font-family: "Poppins", serif;
+}
+.button {
+    background-color: #ffffff;
+    color: #252525;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.button:hover {
+    background-color: #cdcdcd;
+}
+
+.notes-list {
+    margin-top: 15px;
+    max-height: 200px;
+    overflow-y: auto;
+    display: flex; 
+    flex-direction: column;
+    gap: 10px;
+}
+
+.notes-list:empty {
+    display: none; 
+}
+
+.note-item {
+    padding: 13px;
+    border: 1px solid #656565;
+    border-radius: 13px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: all 0.3s ease-in-out;
+}
+.note-item-content{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.note-item:hover {
+    background-color: #f5f5f5;
+    color: #252525;
+}
+.note-actions{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.edit-note{
+    width: 50%;
+    border-radius: 8px;
+}
+.delete-note{
+    width: 50%;
+    border-radius: 8px;
+}
